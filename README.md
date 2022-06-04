@@ -13,3 +13,6 @@ To install the required packages and libraries, run this command in the project 
 # Goal
 Build a solution that should able to predict the probability of credit default based on credit card owner’s characteristics and payment history.
 
+# Dataset Information
+This dataset contains information on default payments, demographic factors, credit data, history of payment, and bill statements of credit card clients in Taiwan from April 2005 to September 2005.
+
