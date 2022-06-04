@@ -11,5 +11,5 @@ To install the required packages and libraries, run this command in the project 
 ```pip install -r requirements.txt```
 
 # Goal
-We have to build a solution that should able to predict the probability of credit default based on credit card owner’s characteristics and payment history.
+Build a solution that should able to predict the probability of credit default based on credit card owner’s characteristics and payment history.
 
