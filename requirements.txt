@@ -77,4 +77,3 @@ Werkzeug==2.1.2
 xgboost==1.6.1
 passlib==1.7.0
 gunicorn==19.0.0
-gevent==1.2.1
