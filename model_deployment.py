@@ -1,16 +1,16 @@
 
 import numpy as np
 from flask import Flask, request, jsonify, render_template
-import pickle
+import joblib
 
 app = Flask(__name__)
-model = pickle.load(open('rc_model.pkl', 'rb'))
+model = joblib.load('rfc.sav')
 
 @app.route('/')
 def home():
     return render_template('index.html')
 
-@app.route('/predict', methods=['POST'])
+@app.route('/predict', methods=['GET'])
 def predict():
     features = [int(x) for x in request.form.values()]
     feature_list = [features[4]] + features[:4] + features[5:11][::-1] + features[11:17][::-1] + features[17:][::-1]
