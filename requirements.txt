@@ -76,4 +76,4 @@ webencodings==0.5.1
 Werkzeug==2.1.2
 xgboost==1.6.1
 passlib==1.7.0
-gunicorn==19.9.0
+gunicorn
