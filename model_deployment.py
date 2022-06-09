@@ -10,7 +10,7 @@ model = joblib.load('rfc.sav')
 def home():
     return render_template('index.html')
 
-@app.route('/predict', methods=['GET'])
+@app.route('/predict', methods=['POST'])
 def predict():
     features = [int(x) for x in request.form.values()]
     feature_list = [features[4]] + features[:4] + features[5:11][::-1] + features[11:17][::-1] + features[17:][::-1]
